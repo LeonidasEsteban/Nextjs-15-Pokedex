@@ -1,0 +1,31 @@
+@property --gradient1 {
+  syntax: '<color>';
+  initial-value: transparent;
+  inherits: true;
+}
+
+@property --gradient2 {
+  syntax: '<color>';
+  initial-value: transparent;
+  inherits: true;
+}
+
+@property --gradient3 {
+  syntax: '<color>';
+  initial-value: transparent;
+  inherits: true;
+}
+
+.gradient-background {
+  position: absolute;
+  inset: 0;
+  transition: --gradient1 0.5s ease-in-out,
+    --gradient2 0.5s ease-in-out,
+    --gradient3 0.5s ease-in-out;
+  background:
+    radial-gradient(at calc(var(--x1, 40) * 1%) calc(var(--y1, 20) * 1%), var(--gradient1) 0px, transparent 50%),
+    radial-gradient(at calc(var(--x2, 80) * 1%) calc(var(--y2, 0) * 1%), var(--gradient2) 0px, transparent 50%),
+    radial-gradient(at calc(var(--x3, 0) * 1%) calc(var(--y3, 50) * 1%), var(--gradient3) 0px, transparent 50%),
+    radial-gradient(at calc(var(--x1, 40) * 1%) calc(var(--y1, 20) * 1%), var(--gradient1) 0px, transparent 50%),
+    radial-gradient(at calc(var(--x2, 80) * 1%) calc(var(--y2, 0) * 1%), var(--gradient2) 0px, transparent 50%);
+}

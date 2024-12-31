@@ -1,0 +1,20 @@
+export const typeColors = {
+  normal: 'bg-gray-400',
+  fighting: 'bg-red-700',
+  flying: 'bg-indigo-400',
+  poison: 'bg-purple-600',
+  ground: 'bg-yellow-600',
+  rock: 'bg-yellow-700',
+  bug: 'bg-green-500',
+  ghost: 'bg-purple-800',
+  steel: 'bg-gray-500',
+  fire: 'bg-red-500',
+  water: 'bg-blue-500',
+  grass: 'bg-green-600',
+  electric: 'bg-yellow-400',
+  psychic: 'bg-pink-500',
+  ice: 'bg-blue-300',
+  dragon: 'bg-indigo-600',
+  dark: 'bg-gray-800',
+  fairy: 'bg-pink-400'
+};
