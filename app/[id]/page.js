@@ -4,7 +4,7 @@ import { typeColors } from '../utils/typeColors';
 import StatsRadar from '../components/StatsRadar';
 import AudioControl from '../components/AudioControl';
 import PokemonImage from '../components/PokemonImage';
-import { translateType } from '../../utils/typeTranslations';
+import { translateType } from '../utils/typeTranslations';
 import PokemonSearch from '../components/PokemonSearch';
 async function getPokemonData(name) {
   const [pokemonRes, speciesRes] = await Promise.all([
@@ -102,13 +102,13 @@ export default async function PokemonPage({ params }) {
             {pokemon.prevPokemon && (
               <Link
                 className="navigation-left" aria-label={pokemon.prevPokemon.name}
-                href={`/blog/${pokemon.prevPokemon.name}`}
+                href={`/${pokemon.prevPokemon.name}`}
               >
               </Link>
             )}
             {pokemon.nextPokemon && (
               <Link
-                href={`/blog/${pokemon.nextPokemon.name}`}
+                href={`/${pokemon.nextPokemon.name}`}
                 className="navigation-right"
                 aria-label={pokemon.nextPokemon.name}
               >
