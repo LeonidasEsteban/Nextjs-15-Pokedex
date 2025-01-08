@@ -1,3 +1,6 @@
+![CleanShot 2025-01-08 at 16 30 24@2x](https://github.com/user-attachments/assets/172c4411-0af9-4dfc-8fe9-bf7c04c214b7)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
